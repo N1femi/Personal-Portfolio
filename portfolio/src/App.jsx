@@ -1,7 +1,9 @@
+import './App.css'
+
 function Nav() {
   return (
     <>
-      <a id="home-btn" className="nav-btn"> Nifemi's WRLD</a>
+      <a id="home-btn" className="nav-btn nav-logo">Nifemi's WRLD</a>
       <a className="nav-btn">Timeline</a>
       <a className="nav-btn">Archives</a>
       <a className="nav-btn">Resume</a>
@@ -12,16 +14,16 @@ function Nav() {
 function IntroCard() {
   return (
     <>
-      <div id="intro-card">
-        <h3>
-          Hello!
-        </h3>
+      <div id="intro-card" className="intro-card glass">
+        <h3 className="intro-greeting">Hello!</h3>
 
-        <h2>
-          My name is: { "Oluwanifemi Babajide" }
+        <h2 className="intro-name">
+          My name is: {"Oluwanifemi Babajide"}
         </h2>
 
-        <p>An aspiring Software, Systems, & AI/ML Engineer. </p>
+        <p className="intro-text">
+          An aspiring Software, Systems, & AI/ML Engineer.
+        </p>
       </div>
     </>
   )
@@ -30,7 +32,7 @@ function IntroCard() {
 function App() {
   return (
     <>
-      <Nav />
+      <Nav/>
       <IntroCard />
     </>
   )
